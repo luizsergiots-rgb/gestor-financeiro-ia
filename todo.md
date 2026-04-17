@@ -29,11 +29,11 @@
 - [x] Status dos serviços
 - [x] Filas de processamento
 
-## FASE 5: Configurações do Sistema (🔴 EM PROGRESSO)
-- [ ] Página de Configurações funcional
-- [ ] Persistência de configurações no banco de dados
-- [ ] Interface para editar configurações
-- [ ] Validação de configurações
+## FASE 5: Configurações do Sistema (✅ CONCLUÍDA)
+- [x] Página de Configurações funcional
+- [x] Persistência de configurações no banco de dados (localStorage)
+- [x] Interface para editar configurações
+- [x] Validação de configurações
 
 ## FASE 6: Whisper - Transcrição de Áudio (🔴 EM PROGRESSO)
 - [ ] Instalação automática de Whisper
