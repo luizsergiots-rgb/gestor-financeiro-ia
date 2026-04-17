@@ -6,6 +6,8 @@ import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
 import Services from "@/pages/Services";
 import Financial from "@/pages/Financial";
+import FinancialFilters from "@/pages/FinancialFilters";
+import DatabaseManagement from "@/pages/DatabaseManagement";
 import Monitoring from "@/pages/Monitoring";
 import Diagnostics from "@/pages/Diagnostics";
 import { Route, Switch } from "wouter";
@@ -20,6 +22,8 @@ function Router() {
       <Route path={"/dashboard"} component={Dashboard} />
       <Route path={"/services"} component={Services} />
       <Route path={"/financial"} component={Financial} />
+      <Route path={"/financial/filters"} component={FinancialFilters} />
+      <Route path={"/database"} component={DatabaseManagement} />
       <Route path={"/monitoring"} component={Monitoring} />
       <Route path={"/diagnostics"} component={Diagnostics} />
       <Route path={"/404"} component={NotFound} />
