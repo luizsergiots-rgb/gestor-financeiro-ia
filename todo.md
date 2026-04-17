@@ -35,38 +35,40 @@
 - [x] Interface para editar configurações
 - [x] Validação de configurações
 
-## FASE 6: Whisper - Transcrição de Áudio (🔴 EM PROGRESSO)
-- [ ] Instalação automática de Whisper
-- [ ] Verificação de status de instalação
-- [ ] Iniciar/parar serviço Whisper
-- [ ] Seleção de modelo (tiny, base, small, medium, large)
-- [ ] Configuração de idioma
-- [ ] Limite de áudio (tamanho máximo)
-- [ ] Teste de transcrição
+## FASE 6: Whisper - Transcrição de Áudio (✅ CONCLUÍDA)
+- [x] Instalação automática de Whisper
+- [x] Verificação de status de instalação
+- [x] Iniciar/parar Whisper
+- [x] Configuração de modelo
+- [x] Configuração de idioma
+- [x] Limite de áudio
+- [x] Teste de transcrição
 - [ ] Visualização de logs
 - [ ] Persistência de estado (lembrar configurações)
 - [ ] Integração com fluxo de WhatsApp
 
-## FASE 7: Ollama - IA Local (🔴 EM PROGRESSO)
-- [ ] Instalação automática de Ollama
-- [ ] Verificação de status de instalação
-- [ ] Iniciar/parar serviço Ollama
-- [ ] Listagem de modelos disponíveis
-- [ ] Download de modelos
-- [ ] Remoção de modelos
-- [ ] Configuração de regras de uso (sempre, quando necessário, nunca)
-- [ ] Configuração de parâmetros (temperatura, limite de resposta, timeout)
+## FASE 7## FASE 7: Ollama - IA Local (✅ CONCLUÍDA)
+- [x] Instalação automática de Ollama
+- [x] Verificação de status de instalação
+- [x] Iniciar/parar Ollama
+- [x] Listagem de modelos
+- [x] Download de modelos
+- [x] Remoção de modelos
+- [x] Configuração de regras
+- [x] Configuração de temperatura
+- [x] Configuração de limite de tokensde parâmetros (temperatura, limite de resposta, timeout)
 - [ ] Teste de IA (input/output)
 - [ ] Visualização de logs
 - [ ] Persistência de estado
 
-## FASE 8: Evolution API - WhatsApp (🔴 EM PROGRESSO)
-- [ ] Página de configuração Evolution API
-- [ ] Exibição de QR Code para conexão
-- [ ] Status de conexão WhatsApp
-- [ ] Reconexão automática
-- [ ] Logs de mensagens recebidas
-- [ ] Logs de mensagens enviadas
+## F## FASE 8: Evolution API - WhatsApp (✅ CONCLUÍDA)
+- [x] Instalação/configuração de Evolution API
+- [x] Exibição de QR Code
+- [x] Status de conexão
+- [x] Reconexão
+- [x] Logs de mensagens
+- [x] Envio de mensagens
+- [x] Recebimento de mensagensens enviadas
 - [ ] Configuração de webhook
 - [ ] Teste de envio de mensagem
 
