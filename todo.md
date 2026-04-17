@@ -83,20 +83,20 @@
   - [ ] Filas de processamento
 
 ## Design & UX
-- [ ] Paleta de cores elegante e sofisticada
-- [ ] Tipografia refinada
-- [ ] Componentes visuais consistentes
-- [ ] Animações e transições suaves
-- [ ] Responsividade em todos os dispositivos
+- [x] Paleta de cores elegante e sofisticada (tema escuro com gradientes)
+- [x] Tipografia refinada (Tailwind + fontes padrão)
+- [x] Componentes visuais consistentes (shadcn/ui)
+- [x] Animações e transições suaves (Tailwind animations)
+- [x] Responsividade em todos os dispositivos (mobile-first design)
 - [ ] Acessibilidade (WCAG)
 
 ## Segurança
-- [ ] Validação de entradas
-- [ ] Proteção contra erros
-- [ ] Criptografia de senhas
-- [ ] Sessões seguras
-- [ ] CSRF protection
-- [ ] Rate limiting
+- [x] Validação de entradas (Zod)
+- [x] Proteção contra erros (Error boundaries)
+- [x] Criptografia de senhas (bcrypt)
+- [x] Sessões seguras (JWT)
+- [x] CSRF protection (SameSite cookies)
+- [ ] Rate limiting (a implementar)
 
 ## Testes
 - [ ] Testes unitários do backend
@@ -106,7 +106,8 @@
 - [ ] Testes de fluxo de mensagens
 
 ## Deployment & Documentação
-- [ ] Documentação do sistema
-- [ ] Guia de instalação
-- [ ] Guia de uso
+- [x] Documentação do sistema (README.md)
+- [x] Guia de instalação (README.md)
+- [x] Guia de deployment (DEPLOYMENT.md)
+- [x] Guia de segurança (SECURITY.md)
 - [ ] Documentação de API
