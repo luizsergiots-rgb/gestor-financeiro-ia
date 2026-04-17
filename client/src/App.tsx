@@ -4,7 +4,8 @@ import NotFound from "@/pages/NotFound";
 import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
 import Services from "@/pages/Services";
-import Financial from "@/pages/Financial";
+import FinancialConnected from "./pages/FinancialConnected";
+import Monitoring from "./pages/Monitoring";
 import Home from "@/pages/Home";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -17,7 +18,8 @@ function Router() {
       <Route path={"/login"} component={Login} />
       <Route path={"/dashboard"} component={Dashboard} />
       <Route path={"/dashboard/services"} component={Services} />
-      <Route path={"/dashboard/financial"} component={Financial} />
+       <Route path={"dashboard/financial"} component={FinancialConnected} />
+      <Route path={"dashboard/monitoring"} component={Monitoring} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

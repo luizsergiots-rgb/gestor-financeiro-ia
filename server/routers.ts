@@ -4,6 +4,7 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { financialRouter } from "./routers/financial";
 import { servicesRouter } from "./routers/services";
+import { whatsappRouter } from "./routers/whatsapp";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -20,6 +21,7 @@ export const appRouter = router({
   }),
   financial: financialRouter,
   services: servicesRouter,
+  whatsapp: whatsappRouter,
 
   // TODO: add feature routers here, e.g.
   // todo: router({

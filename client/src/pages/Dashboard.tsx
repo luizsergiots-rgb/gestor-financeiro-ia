@@ -3,7 +3,7 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Loader2, LogOut, Settings, BarChart3, MessageSquare, Zap, Database } from "lucide-react";
+import { Loader2, LogOut, Settings, BarChart3, MessageSquare, Zap, Database, Activity } from "lucide-react";
 
 interface User {
   id: number;
@@ -160,6 +160,7 @@ export default function Dashboard() {
             <TabsTrigger value="overview">Visão Geral</TabsTrigger>
             <TabsTrigger value="services">Serviços</TabsTrigger>
             <TabsTrigger value="financial">Financeiro</TabsTrigger>
+            <TabsTrigger value="monitoring">Monitoramento</TabsTrigger>
             <TabsTrigger value="settings">Configurações</TabsTrigger>
           </TabsList>
 
@@ -223,6 +224,24 @@ export default function Dashboard() {
                   className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
                 >
                   Acessar Painel Financeiro
+                </Button>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="monitoring" className="space-y-4">
+            <Card className="border-slate-700 bg-slate-800/50 backdrop-blur">
+              <CardHeader>
+                <CardTitle>Monitoramento</CardTitle>
+                <CardDescription>Visualize o status e desempenho do sistema</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-400 text-sm mb-4">Acompanhe CPU, memória, serviços e filas</p>
+                <Button
+                  onClick={() => setLocation("/dashboard/monitoring")}
+                  className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
+                >
+                  Acessar Monitoramento
                 </Button>
               </CardContent>
             </Card>

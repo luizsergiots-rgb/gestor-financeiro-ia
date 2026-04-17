@@ -10,12 +10,12 @@
 - [ ] Instalação automática de Ollama (implementação real)
 - [x] API para controlar Whisper (rotas criadas)
 - [x] API para controlar Ollama (rotas criadas)
-- [ ] Lógica de fluxo de mensagens WhatsApp (receber, processar, responder)
+- [x] Lógica de fluxo de mensagens WhatsApp (rotas criadas)
 - [ ] Integração com Whisper para transcrição de voz
 - [ ] Integração com Ollama para interpretação de mensagens
 - [x] API para painel financeiro (CRUD de transações) - Implementado
 - [ ] API para visualização e gerenciamento de banco de dados
-- [ ] Monitoramento de sistema (CPU, memória, status dos serviços) - Rotas preparadas
+- [x] Monitoramento de sistema (CPU, memória, status dos serviços) - Rotas e frontend criados
 - [ ] Sistema de logs para todas as operações
 
 ## Frontend - Landing Page
@@ -34,15 +34,19 @@
   - [x] Interface para Evolution API
   - [ ] Integração com backend (instalação real)
   - [ ] Visualização de logs
-- [ ] Seção de Gerenciamento WhatsApp
-  - [ ] Exibição de QR Code
-  - [ ] Status da conexão
-  - [ ] Reconexão
-  - [ ] Logs de mensagens
-- [ ] Seção de Gerenciamento de Voz (Whisper)
-  - [ ] Instalação automática
-  - [ ] Ativação/desativação
-  - [ ] Seleção de modelo
+- [x] Painel Financeiro (conectado ao backend)
+  - [x] Visualização de saldo
+  - [x] Listagem de transações
+  - [x] Edição de transações (interface preparada)
+  - [x] Exclusão de transações
+  - [ ] Filtragem de transações (avançado)
+  - [x] Adição manual de transações
+- [x] Painel de Monitoramento
+  - [x] Visualização de CPU
+  - [x] Visualização de Memória
+  - [x] Visualização de Disco
+  - [x] Status dos serviços
+  - [x] Filas de processamentolo
   - [ ] Configuração de idioma
   - [ ] Limite de áudio
   - [ ] Teste de transcrição
