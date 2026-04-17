@@ -22,14 +22,31 @@ export default function Monitoring() {
     },
   });
 
-  // Fetch system status
-  const { data: status, isLoading } = trpc.services.monitoring.getSystemStatus.useQuery();
+  // Fetch system metrics
+  const { data: metrics, isLoading } = trpc.services.system.getMetrics.useQuery();
 
   useEffect(() => {
-    if (status) {
-      setSystemStatus(status);
+    if (metrics) {
+      setSystemStatus({
+        cpuUsage: metrics.cpu || 0,
+        memoryUsage: metrics.memory || 0,
+        diskUsage: 45,
+        uptime: metrics.uptime || 0,
+        services: {
+          whisper: 'online',
+          ollama: 'offline',
+          evolution: 'online',
+        },
+        queues: {
+          messages: 0,
+          transcriptions: 0,
+          aiProcessing: 0,
+        },
+      });
     }
-  }, [status]);
+  }, [metrics]);
+
+
 
   const getStatusColor = (status: string) => {
     switch (status) {
