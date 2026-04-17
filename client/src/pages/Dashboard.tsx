@@ -161,6 +161,7 @@ export default function Dashboard() {
             <TabsTrigger value="overview">Visão Geral</TabsTrigger>
             <TabsTrigger value="services">Serviços</TabsTrigger>
             <TabsTrigger value="financial">Financeiro</TabsTrigger>
+            <TabsTrigger value="database">Banco de Dados</TabsTrigger>
             <TabsTrigger value="monitoring">Monitoramento</TabsTrigger>
             <TabsTrigger value="settings">Configurações</TabsTrigger>
           </TabsList>
@@ -218,13 +219,43 @@ export default function Dashboard() {
                 <CardTitle>Painel Financeiro</CardTitle>
                 <CardDescription>Gerencie suas transações e saldo</CardDescription>
               </CardHeader>
+              <CardContent className="space-y-3">
+                <div>
+                  <p className="text-slate-400 text-sm mb-3">Visualize e controle todas as suas transações</p>
+                  <Button
+                    onClick={() => setLocation("/financial")}
+                    className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 w-full"
+                  >
+                    Painel Principal
+                  </Button>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-sm mb-3">Filtros avançados, busca e exportação de dados</p>
+                  <Button
+                    onClick={() => setLocation("/financial/filters")}
+                    variant="outline"
+                    className="border-slate-600 text-slate-300 hover:bg-slate-700 w-full"
+                  >
+                    Filtros Avançados
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="database" className="space-y-4">
+            <Card className="border-slate-700 bg-slate-800/50 backdrop-blur">
+              <CardHeader>
+                <CardTitle>Gerenciamento de Banco de Dados</CardTitle>
+                <CardDescription>Backup, restore e estatísticas</CardDescription>
+              </CardHeader>
               <CardContent>
-                <p className="text-slate-400 text-sm mb-4">Visualize e controle todas as suas transações</p>
+                <p className="text-slate-400 text-sm mb-4">Crie backups, restaure dados e visualize estatísticas do banco</p>
                 <Button
-                  onClick={() => setLocation("/dashboard/financial")}
-                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                  onClick={() => setLocation("/database")}
+                  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
                 >
-                  Acessar Painel Financeiro
+                  Acessar Gerenciamento
                 </Button>
               </CardContent>
             </Card>

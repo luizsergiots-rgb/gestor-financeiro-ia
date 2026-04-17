@@ -91,7 +91,8 @@
 - [x] Delete de backup (frontend UI)
 
 ## FASE 11: Testes e Segurança (🔴 EM PROGRESSO)
-- [ ] Testes unitários do backend
+- [x] Navegação para novas páginas no dashboard
+- [x] Testes unitários do backend (financial e database)
 - [ ] Testes de integração
 - [ ] Testes end-to-end
 - [ ] Testes de autenticação
