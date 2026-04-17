@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Loader2, LogOut, Settings, BarChart3, MessageSquare, Zap, Database, Activity } from "lucide-react";
+import SettingsPage from "./Settings";
 
 interface User {
   id: number;
@@ -248,15 +249,7 @@ export default function Dashboard() {
           </TabsContent>
 
           <TabsContent value="settings" className="space-y-4">
-            <Card className="border-slate-700 bg-slate-800/50 backdrop-blur">
-              <CardHeader>
-                <CardTitle>Configurações</CardTitle>
-                <CardDescription>Personalize seu sistema</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-400 text-sm">Em desenvolvimento...</p>
-              </CardContent>
-            </Card>
+            <SettingsPage />
           </TabsContent>
         </Tabs>
       </div>

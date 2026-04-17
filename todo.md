@@ -1,86 +1,113 @@
 # Gestor Financeiro IA - TODO List
 
-## Backend & Infrastructure
+## FASE 1: Autenticação e Banco de Dados (✅ CONCLUÍDA)
 - [x] Autenticação independente (username/password) sem OAuth
-- [x] Estrutura de banco de dados MySQL com tabelas de usuários, transações, configurações
+- [x] Estrutura de banco de dados MySQL com tabelas
 - [x] API REST/tRPC para gerenciamento de usuários
-- [x] Rotas de API para Evolution API, Whisper e Ollama (estrutura criada)
-- [x] Sistema de gerenciamento de serviços (Whisper, Ollama) via backend (rotas preparadas)
-- [ ] Instalação automática de Whisper (implementação real)
-- [ ] Instalação automática de Ollama (implementação real)
-- [x] API para controlar Whisper (rotas criadas)
-- [x] API para controlar Ollama (rotas criadas)
-- [x] Lógica de fluxo de mensagens WhatsApp (rotas criadas)
-- [ ] Integração com Whisper para transcrição de voz
-- [ ] Integração com Ollama para interpretação de mensagens
-- [x] API para painel financeiro (CRUD de transações) - Implementado
-- [ ] API para visualização e gerenciamento de banco de dados
-- [x] Monitoramento de sistema (CPU, memória, status dos serviços) - Rotas e frontend criados
-- [ ] Sistema de logs para todas as operações
+- [x] Banco de dados sincronizado na VPS
 
-## Frontend - Landing Page
+## FASE 2: Frontend Landing Page e Dashboard (✅ CONCLUÍDA)
 - [x] Design elegante e sofisticado da landing page
-- [x] Apresentação do sistema
-- [x] Acesso ao login
-- [x] Responsividade completa
-
-## Frontend - Painel Web
 - [x] Layout principal do painel com navegação
 - [x] Autenticação (login/logout) com username e password
 - [x] Dashboard principal com visão geral do sistema
-- [x] Seção de Gerenciamento de Serviços (interface criada)
-  - [x] Interface para Whisper
-  - [x] Interface para Ollama
-  - [x] Interface para Evolution API
-  - [ ] Integração com backend (instalação real)
-  - [ ] Visualização de logs
-- [x] Painel Financeiro (conectado ao backend)
-  - [x] Visualização de saldo
-  - [x] Listagem de transações
-  - [x] Edição de transações (interface preparada)
-  - [x] Exclusão de transações
-  - [ ] Filtragem de transações (avançado)
-  - [x] Adição manual de transações
-- [x] Painel de Monitoramento
-  - [x] Visualização de CPU
-  - [x] Visualização de Memória
-  - [x] Visualização de Disco
-  - [x] Status dos serviços
-  - [x] Filas de processamentolo
-  - [ ] Configuração de idioma
-  - [ ] Limite de áudio
-  - [ ] Teste de transcrição
-  - [ ] Visualização de logs
-- [ ] Seção de Gerenciamento de IA (Ollama)
-  - [ ] Instalação automática
-  - [ ] Início/parada do serviço
-  - [ ] Listagem de modelos
-  - [ ] Download de modelos
-  - [ ] Remoção de modelos
-  - [ ] Definição de regras de uso
-  - [ ] Configuração de parâmetros (temperatura, limite, timeout)
-- [ ] Seção de Testes de IA
-  - [ ] Input para digitar frases
-  - [ ] Exibição de resultado por regras
-  - [ ] Exibição de resultado por IA
-  - [ ] Exibição de resultado final
-- [x] Painel Financeiro (interface criada)
-  - [x] Visualização de saldo
-  - [x] Listagem de transações
-  - [x] Edição de transações (interface preparada)
-  - [x] Exclusão de transações
-  - [ ] Filtragem de transações (avançado)
-  - [x] Adição manual de transações
-- [ ] Gerenciamento de Banco de Dados
-  - [ ] Visualização de tabelas
-  - [ ] Edição de dados
-  - [ ] Backup manual
-  - [ ] Restore
-- [ ] Monitoramento em Tempo Real
-  - [ ] Uso de CPU
-  - [ ] Uso de memória
-  - [ ] Status da IA
-  - [ ] Filas de processamento
+- [x] Responsividade completa em todos os dispositivos
+
+## FASE 3: Painel Financeiro (✅ CONCLUÍDA)
+- [x] Visualização de saldo
+- [x] Listagem de transações
+- [x] Adição manual de transações
+- [x] Edição de transações (interface preparada)
+- [x] Exclusão de transações
+- [ ] Filtragem de transações (avançado)
+- [ ] Exportação de relatórios
+
+## FASE 4: Monitoramento em Tempo Real (✅ CONCLUÍDA)
+- [x] Visualização de CPU
+- [x] Visualização de Memória
+- [x] Visualização de Disco
+- [x] Status dos serviços
+- [x] Filas de processamento
+
+## FASE 5: Configurações do Sistema (🔴 EM PROGRESSO)
+- [ ] Página de Configurações funcional
+- [ ] Persistência de configurações no banco de dados
+- [ ] Interface para editar configurações
+- [ ] Validação de configurações
+
+## FASE 6: Whisper - Transcrição de Áudio (🔴 EM PROGRESSO)
+- [ ] Instalação automática de Whisper
+- [ ] Verificação de status de instalação
+- [ ] Iniciar/parar serviço Whisper
+- [ ] Seleção de modelo (tiny, base, small, medium, large)
+- [ ] Configuração de idioma
+- [ ] Limite de áudio (tamanho máximo)
+- [ ] Teste de transcrição
+- [ ] Visualização de logs
+- [ ] Persistência de estado (lembrar configurações)
+- [ ] Integração com fluxo de WhatsApp
+
+## FASE 7: Ollama - IA Local (🔴 EM PROGRESSO)
+- [ ] Instalação automática de Ollama
+- [ ] Verificação de status de instalação
+- [ ] Iniciar/parar serviço Ollama
+- [ ] Listagem de modelos disponíveis
+- [ ] Download de modelos
+- [ ] Remoção de modelos
+- [ ] Configuração de regras de uso (sempre, quando necessário, nunca)
+- [ ] Configuração de parâmetros (temperatura, limite de resposta, timeout)
+- [ ] Teste de IA (input/output)
+- [ ] Visualização de logs
+- [ ] Persistência de estado
+
+## FASE 8: Evolution API - WhatsApp (🔴 EM PROGRESSO)
+- [ ] Página de configuração Evolution API
+- [ ] Exibição de QR Code para conexão
+- [ ] Status de conexão WhatsApp
+- [ ] Reconexão automática
+- [ ] Logs de mensagens recebidas
+- [ ] Logs de mensagens enviadas
+- [ ] Configuração de webhook
+- [ ] Teste de envio de mensagem
+
+## FASE 9: Fluxo de Mensagens WhatsApp (🔴 EM PROGRESSO)
+- [ ] Recebimento de mensagens de texto
+- [ ] Recebimento de mensagens de áudio
+- [ ] Transcrição automática via Whisper
+- [ ] Processamento por regras
+- [ ] Processamento por IA (Ollama)
+- [ ] Extração de dados financeiros
+- [ ] Envio de resposta automática
+- [ ] Logs de fluxo completo
+
+## FASE 10: Gerenciamento de Banco de Dados (🔴 EM PROGRESSO)
+- [ ] Página de gerenciamento de banco de dados
+- [ ] Visualização de tabelas
+- [ ] Visualização de dados das tabelas
+- [ ] Edição de dados
+- [ ] Exclusão de registros
+- [ ] Backup manual
+- [ ] Restore de backup
+- [ ] Exportação de dados
+
+## FASE 11: Testes e Segurança (🔴 EM PROGRESSO)
+- [ ] Testes unitários do backend
+- [ ] Testes de integração
+- [ ] Testes end-to-end
+- [ ] Testes de autenticação
+- [ ] Testes de fluxo de mensagens
+- [ ] Rate limiting
+- [ ] Validação de entradas
+- [ ] Proteção contra erros
+
+## FASE 12: Documentação e Deploy (🔴 EM PROGRESSO)
+- [x] README.md completo
+- [x] SECURITY.md com boas práticas
+- [x] DEPLOYMENT.md com instruções VPS/aaPanel
+- [ ] Documentação de API
+- [ ] Guia de uso do sistema
+- [ ] Troubleshooting
+- [ ] Vídeos tutoriais (opcional)
 
 ## Design & UX
 - [x] Paleta de cores elegante e sofisticada (tema escuro com gradientes)
@@ -96,18 +123,20 @@
 - [x] Criptografia de senhas (bcrypt)
 - [x] Sessões seguras (JWT)
 - [x] CSRF protection (SameSite cookies)
-- [ ] Rate limiting (a implementar)
+- [ ] Rate limiting
+- [ ] Proteção contra XSS
+- [ ] Proteção contra SQL Injection
 
-## Testes
-- [ ] Testes unitários do backend
-- [ ] Testes de integração
-- [ ] Testes end-to-end
-- [ ] Testes de autenticação
-- [ ] Testes de fluxo de mensagens
+## Status Geral
+- ✅ Fase 1-4: Concluídas (Autenticação, Frontend, Financeiro, Monitoramento)
+- 🔴 Fase 5-12: Em Progresso (Configurações, Whisper, Ollama, Evolution API, etc)
 
-## Deployment & Documentação
-- [x] Documentação do sistema (README.md)
-- [x] Guia de instalação (README.md)
-- [x] Guia de deployment (DEPLOYMENT.md)
-- [x] Guia de segurança (SECURITY.md)
-- [ ] Documentação de API
+## Próximos Passos Imediatos
+1. Implementar página de Configurações funcional
+2. Implementar instalação e gerenciamento de Whisper
+3. Implementar instalação e gerenciamento de Ollama
+4. Implementar configuração de Evolution API
+5. Implementar persistência de estado para todos os serviços
+6. Testar fluxo completo de WhatsApp
+7. Criar testes automatizados
+8. Finalizar documentação

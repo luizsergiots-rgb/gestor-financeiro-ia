@@ -1,12 +1,13 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
+import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
 import Services from "@/pages/Services";
-import FinancialConnected from "./pages/FinancialConnected";
-import Monitoring from "./pages/Monitoring";
-import Home from "@/pages/Home";
+import Financial from "@/pages/Financial";
+import Monitoring from "@/pages/Monitoring";
+import Settings from "@/pages/Settings";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -17,9 +18,10 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/login"} component={Login} />
       <Route path={"/dashboard"} component={Dashboard} />
-      <Route path={"/dashboard/services"} component={Services} />
-       <Route path={"dashboard/financial"} component={FinancialConnected} />
-      <Route path={"dashboard/monitoring"} component={Monitoring} />
+      <Route path={"/services"} component={Services} />
+      <Route path={"/financial"} component={Financial} />
+      <Route path={"/monitoring"} component={Monitoring} />
+      <Route path={"/settings"} component={Settings} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
