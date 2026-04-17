@@ -17,8 +17,10 @@ export default function FinancialConnected() {
   });
 
   // Fetch transactions and summary from backend
-  const { data: transactions = [], isLoading: transactionsLoading } = trpc.financial.getTransactions.useQuery({});
-  const { data: summary, isLoading: summaryLoading } = trpc.financial.getSummary.useQuery();
+  const { data: transactionsResponse, isLoading: transactionsLoading } = trpc.financial.getTransactions.useQuery({});
+  const { data: summary, isLoading: summaryLoading } = trpc.financial.getSummary.useQuery({});
+  
+  const transactions = Array.isArray(transactionsResponse) ? transactionsResponse : (transactionsResponse?.data || []);
 
   // Mutations
   const createMutation = trpc.financial.createTransaction.useMutation({
@@ -218,7 +220,7 @@ export default function FinancialConnected() {
             <p className="text-slate-400 text-center py-8">Nenhuma transação registrada</p>
           ) : (
             <div className="space-y-2">
-              {transactions.map((transaction) => (
+              {transactions.map((transaction: any) => (
                 <div
                   key={transaction.id}
                   className="flex items-center justify-between p-4 rounded-lg bg-slate-700/30 border border-slate-700 hover:border-slate-600 transition-all"

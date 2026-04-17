@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Activity, Cpu, HardDrive, Zap, MessageSquare, Brain } from "lucide-react";
@@ -45,8 +45,6 @@ export default function Monitoring() {
       });
     }
   }, [metrics]);
-
-
 
   const getStatusColor = (status: string) => {
     switch (status) {

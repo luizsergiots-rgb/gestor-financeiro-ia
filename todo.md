@@ -13,14 +13,14 @@
 - [x] Dashboard principal com visão geral do sistema
 - [x] Responsividade completa em todos os dispositivos
 
-## FASE 3: Painel Financeiro (✅ CONCLUÍDA)
+## FASE 3: Painel Financeiro (🔴 EM PROGRESSO)
 - [x] Visualização de saldo
 - [x] Listagem de transações
 - [x] Adição manual de transações
 - [x] Edição de transações (interface preparada)
 - [x] Exclusão de transações
-- [ ] Filtragem de transações (avançado)
-- [ ] Exportação de relatórios
+- [ ] Filtragem de transações UI (avançado)
+- [ ] Exportação de relatórios UI
 
 ## FASE 4: Monitoramento em Tempo Real (✅ CONCLUÍDA)
 - [x] Visualização de CPU
@@ -73,24 +73,24 @@
 - [ ] Teste de envio de mensagem
 
 ## FASE 9: Fluxo de Mensagens WhatsApp (🔴 EM PROGRESSO)
-- [ ] Recebimento de mensagens de texto
-- [ ] Recebimento de mensagens de áudio
-- [ ] Transcrição automática via Whisper
-- [ ] Processamento por regras
-- [ ] Processamento por IA (Ollama)
-- [ ] Extração de dados financeiros
-- [ ] Envio de resposta automática
-- [ ] Logs de fluxo completo
+- [x] Recebimento de mensagens de texto (backend)
+- [x] Recebimento de mensagens de áudio (backend)
+- [x] Transcrição automática via Whisper (backend)
+- [ ] Processamento por regras (backend)
+- [x] Processamento por IA (Ollama) (backend)
+- [x] Extração de dados financeiros (backend)
+- [ ] Envio de resposta automática (Evolution API)
+- [ ] Logs de fluxo completo UI
 
 ## FASE 10: Gerenciamento de Banco de Dados (🔴 EM PROGRESSO)
-- [ ] Página de gerenciamento de banco de dados
-- [ ] Visualização de tabelas
-- [ ] Visualização de dados das tabelas
-- [ ] Edição de dados
-- [ ] Exclusão de registros
-- [ ] Backup manual
-- [ ] Restore de backup
-- [ ] Exportação de dados
+- [ ] Página de gerenciamento de banco de dados (frontend)
+- [ ] Visualização de tabelas (frontend)
+- [ ] Visualização de dados das tabelas (frontend)
+- [ ] Edição de dados (frontend)
+- [ ] Exclusão de registros (frontend)
+- [ ] Backup manual (frontend UI)
+- [ ] Restore de backup (frontend UI)
+- [ ] Exportação de dados (frontend UI)
 
 ## FASE 11: Testes e Segurança (🔴 EM PROGRESSO)
 - [ ] Testes unitários do backend
