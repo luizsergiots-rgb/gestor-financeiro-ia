@@ -7,7 +7,7 @@ import Dashboard from "@/pages/Dashboard";
 import Services from "@/pages/Services";
 import Financial from "@/pages/Financial";
 import Monitoring from "@/pages/Monitoring";
-import Settings from "@/pages/Settings";
+import Diagnostics from "@/pages/Diagnostics";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -21,7 +21,7 @@ function Router() {
       <Route path={"/services"} component={Services} />
       <Route path={"/financial"} component={Financial} />
       <Route path={"/monitoring"} component={Monitoring} />
-      <Route path={"/settings"} component={Settings} />
+      <Route path={"/diagnostics"} component={Diagnostics} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
