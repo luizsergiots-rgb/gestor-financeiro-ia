@@ -4,18 +4,18 @@
 - [x] Autenticação independente (username/password) sem OAuth
 - [x] Estrutura de banco de dados MySQL com tabelas de usuários, transações, configurações
 - [x] API REST/tRPC para gerenciamento de usuários
-- [ ] Integração com Evolution API para WhatsApp
-- [ ] Sistema de gerenciamento de serviços (Whisper, Ollama) via backend
-- [ ] Instalação automática de Whisper
-- [ ] Instalação automática de Ollama
-- [ ] API para controlar Whisper (iniciar, parar, listar modelos, transcrever)
-- [ ] API para controlar Ollama (iniciar, parar, listar modelos, download, remoção)
+- [x] Rotas de API para Evolution API, Whisper e Ollama (estrutura criada)
+- [x] Sistema de gerenciamento de serviços (Whisper, Ollama) via backend (rotas preparadas)
+- [ ] Instalação automática de Whisper (implementação real)
+- [ ] Instalação automática de Ollama (implementação real)
+- [x] API para controlar Whisper (rotas criadas)
+- [x] API para controlar Ollama (rotas criadas)
 - [ ] Lógica de fluxo de mensagens WhatsApp (receber, processar, responder)
 - [ ] Integração com Whisper para transcrição de voz
 - [ ] Integração com Ollama para interpretação de mensagens
-- [ ] API para painel financeiro (CRUD de transações)
+- [x] API para painel financeiro (CRUD de transações) - Implementado
 - [ ] API para visualização e gerenciamento de banco de dados
-- [ ] Monitoramento de sistema (CPU, memória, status dos serviços)
+- [ ] Monitoramento de sistema (CPU, memória, status dos serviços) - Rotas preparadas
 - [ ] Sistema de logs para todas as operações
 
 ## Frontend - Landing Page
