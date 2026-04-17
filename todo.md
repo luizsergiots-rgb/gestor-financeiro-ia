@@ -28,11 +28,11 @@
 - [x] Layout principal do painel com navegação
 - [x] Autenticação (login/logout) com username e password
 - [x] Dashboard principal com visão geral do sistema
-- [ ] Seção de Gerenciamento de Serviços
-  - [ ] Instalação de Whisper
-  - [ ] Instalação de Ollama
-  - [ ] Status dos serviços (online/offline)
-  - [ ] Iniciar/parar/reiniciar serviços
+- [x] Seção de Gerenciamento de Serviços (interface criada)
+  - [x] Interface para Whisper
+  - [x] Interface para Ollama
+  - [x] Interface para Evolution API
+  - [ ] Integração com backend (instalação real)
   - [ ] Visualização de logs
 - [ ] Seção de Gerenciamento WhatsApp
   - [ ] Exibição de QR Code
@@ -60,13 +60,13 @@
   - [ ] Exibição de resultado por regras
   - [ ] Exibição de resultado por IA
   - [ ] Exibição de resultado final
-- [ ] Painel Financeiro
-  - [ ] Visualização de saldo
-  - [ ] Listagem de transações
-  - [ ] Edição de transações
-  - [ ] Exclusão de transações
-  - [ ] Filtragem de transações
-  - [ ] Adição manual de transações
+- [x] Painel Financeiro (interface criada)
+  - [x] Visualização de saldo
+  - [x] Listagem de transações
+  - [x] Edição de transações (interface preparada)
+  - [x] Exclusão de transações
+  - [ ] Filtragem de transações (avançado)
+  - [x] Adição manual de transações
 - [ ] Gerenciamento de Banco de Dados
   - [ ] Visualização de tabelas
   - [ ] Edição de dados

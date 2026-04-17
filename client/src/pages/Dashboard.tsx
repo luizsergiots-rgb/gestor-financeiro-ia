@@ -199,7 +199,13 @@ export default function Dashboard() {
                 <CardDescription>Instale e controle os serviços do sistema</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-400 text-sm">Em desenvolvimento...</p>
+                <p className="text-slate-400 text-sm mb-4">Gerencie Whisper, Ollama e Evolution API</p>
+                <Button
+                  onClick={() => setLocation("/dashboard/services")}
+                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                >
+                  Acessar Gerenciamento
+                </Button>
               </CardContent>
             </Card>
           </TabsContent>
@@ -211,7 +217,13 @@ export default function Dashboard() {
                 <CardDescription>Gerencie suas transações e saldo</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-400 text-sm">Em desenvolvimento...</p>
+                <p className="text-slate-400 text-sm mb-4">Visualize e controle todas as suas transações</p>
+                <Button
+                  onClick={() => setLocation("/dashboard/financial")}
+                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                >
+                  Acessar Painel Financeiro
+                </Button>
               </CardContent>
             </Card>
           </TabsContent>
